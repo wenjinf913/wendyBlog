@@ -26,7 +26,8 @@ Explanation: 2 does not exist in nums so return -1
 1. While (left **<=** right) has to use **<=**, since left == right is legit in [left, right]
 2. if (nums[middle} > target) & if (nums[middle} < target) **left = middle -1** & **right = middle +1**, since nums[middle] is not the target
 
-![binary-search_closed_interval](./post_img/binary-search_closed_interval.jpg){ width=50% height = 50%}
+<!-- ![binary-search_closed_interval](./post_img/binary-search_closed_interval.jpg){ width=50% height = 50%} -->
+<img src="./post_img/binary-search_closed_interval.jpg" width=50% height=50%>
 
 
 
