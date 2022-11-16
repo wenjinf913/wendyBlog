@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+This is my first time creating this blog. I'll continue to improve it. 
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+In the future, I will post my reflections on learning Leetcode everyday.
