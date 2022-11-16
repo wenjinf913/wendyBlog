@@ -28,8 +28,8 @@ Explanation: 2 does not exist in nums so return -1
 
 <!-- ![binary-search_closed_interval](./post_img/binary-search_closed_interval.jpg){ width=50% height = 50%} -->
 
-<p align="center" width="50%" height="50%">
-    <img src="./post_img/binary-search_closed_interval.jpg">
+<p align="center">
+    <img src="./post_img/binary-search_closed_interval.jpg" width="50%" height="50%">
 </p>
 
 
