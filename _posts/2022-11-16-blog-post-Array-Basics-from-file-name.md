@@ -157,12 +157,16 @@ class Solution(object):
         return slow
 ```
 
-
-
 Algorithm logic:
 
 1. Fast pointer is used to get elements in array
 2. Slow pointer is used to get the position in new array that needs to be updated
+
+Submission Proof:
+
+<p align="center">
+    <img src="https://tva1.sinaimg.cn/large/008vxvgGgy1h8832qzdmnj31c00u077i.jpg" width="70%" height="70%">
+</p>
 
 
 
