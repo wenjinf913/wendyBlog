@@ -1,3 +1,5 @@
+# Array Questions Category
+
 
 
 ## Binary Search Basics
@@ -87,7 +89,80 @@ Submission Proof
 
 
 
+## 27. Remove Elements
 
+Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in `nums` [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm). The relative order of the elements may be changed.
+
+Examples:
+
+```
+Input: nums = [3,2,2,3], val = 3
+Output: 2, nums = [2,2,_,_]
+Explanation: Your function should return k = 2, with the first two elements of nums being 2.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+
+Input: nums = [0,1,2,2,3,0,4,2], val = 2
+Output: 5, nums = [0,1,4,0,3,_,_,_]
+Explanation: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.
+Note that the five elements can be returned in any order.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+```
+
+Brute Force Approach: Time Complexity - O(n²) / Space Complexity - O(1)
+
+```python
+class Solution(object):
+    def removeElement(self, nums, val):
+        """
+        :type nums: List[int]
+        :type val: int
+        :rtype: int
+        """
+        if nums is None or len(nums)==0:
+          return 0
+        size = len(nums)
+        i = 0
+        while i < size:
+            if nums[i]==val: #if find the element to remove, shift the rest of array to the left
+                j = i+1
+                while j<len(nums):
+                    nums[j-1]=nums[j]
+                    j+=1
+                #Because after the element is removed, the following values are moved forward by 1 digit
+                #And we haven't if check nums[i] is the element to be removed.We have to cancel out the
+                #effect of later i+=1
+                i-=1 
+                size-=1
+            i+=1
+        return size
+```
+
+Two Pointer Approach: Time Complexity - O(n) / Space Complexity - O(1)
+
+```python
+class Solution(object):
+    def removeElement(self, nums, val):
+        """
+        :type nums: List[int]
+        :type val: int
+        :rtype: int
+        """
+        if nums is None or len(nums)==0:
+          return 0
+        slow = 0
+        for fast in range(len(nums)):
+            if nums[fast]!=val:
+                nums[slow]=nums[fast]
+                slow=slow+1
+        return slow
+```
+
+
+
+Algorithm logic:
+
+1. Fast pointer is used to get elements in array
+2. Slow pointer is used to get the position in new array that needs to be updated
 
 
 
