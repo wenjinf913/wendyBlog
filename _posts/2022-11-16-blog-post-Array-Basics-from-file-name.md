@@ -34,6 +34,7 @@ Explanation: 2 does not exist in nums so return -1
 <p align="center">
     <img src="./post_img/binary-search_closed_interval.jpg" width="50%" height="50%">
 </p>
+
 ```python
 class Solution(object):
     def search(self, nums, target):
@@ -57,9 +58,6 @@ class Solution(object):
 <p align="center">
     <img src="./post_img/submission-proof.jpg" width="70%" height="70%">
 </p>
-
-![./post_img/binary-search_closed_interval-2.jpg]
-
 
 ```python
 class Solution(object):
