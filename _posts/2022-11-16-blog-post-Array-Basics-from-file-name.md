@@ -227,6 +227,28 @@ Explanation: The subarray [4,3] has the minimal length under the problem constra
 
 Brute Force Approach:
 
+```
+class Solution(object):
+    def minSubArrayLen(self, target, nums):
+        res = float("inf")	
+        sum = 0
+        subLength = 0
+        for i in range(len(nums)):
+            sum = 0
+            j = i
+            while j<len(nums):
+                sum += nums[j]
+                if (sum >= target):
+                    subLength = j-i +1
+                    if res < subLength:break
+                    else: res = subLength
+                j+=1
+
+        return 0 if res==float("inf") else res
+```
+
+
+
 
 
 ![长度最小的子数组](https://tva1.sinaimg.cn/large/008vxvgGgy1h88k4fpr1bg30fi0c0hdu.gif)
