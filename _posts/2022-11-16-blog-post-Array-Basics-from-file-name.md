@@ -32,8 +32,12 @@ Explanation: 2 does not exist in nums so return -1
 2. if (nums[middle} > target) & if (nums[middle} < target)  **right = middle +1** & **left = middle -1**, since nums[middle] is not the target
 
 <p align="center">
-    <img src="/post_img/binary-search_closed_interval.jpg" width="50%" height="50%">
+    <img src="./post_img/binary-search_closed_interval.jpg" width="50%" height="50%">
 </p>
+
+
+
+
 
 ```python
 class Solution(object):
@@ -56,8 +60,9 @@ class Solution(object):
 2. if (nums[middle} > target) & if (nums[middle} < target) **right = middle+1** since nums[middle] is not the target & **left = middle** since nums[middle] will not be examined in the next interval 
 
 <p align="center">
-    <img src="/post_img/binary-search_closed_interval-2.jpg" width="50%" height="50%">
+    <img src="./post_img/binary-search_closed_interval-2.jpg" width="50%" height="50%">
 </p>
+
 
 ```python
 class Solution(object):
@@ -77,7 +82,7 @@ class Solution(object):
 Submission Proof
 
 <p align="center">
-    <img src="/post_img/submission-proof.jpg" width="70%" height="70%">
+    <img src="./post_img/submission-proof.jpg" width="70%" height="70%">
 </p>
 
 
