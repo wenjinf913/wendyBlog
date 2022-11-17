@@ -1,6 +1,8 @@
 # Array Questions Category
 
+## Array Basics
 
+1. Create an array with n spaces stored with -1: arr = [-1] * n
 
 ## Binary Search Basics
 
@@ -168,7 +170,66 @@ Submission Proof:
     <img src="https://tva1.sinaimg.cn/large/008vxvgGgy1h8832qzdmnj31c00u077i.jpg" width="70%" height="70%">
 </p>
 
+### 9778. Longest Turbulent Subarray (有序数组的平方)
 
+Given an integer array `nums` sorted in **non-decreasing** order, return *an array of **the squares of each number** sorted in non-decreasing order*.
+
+Example:
+
+```
+Input: nums = [-4,-1,0,3,10]
+Output: [0,1,9,16,100]
+Explanation: After squaring, the array becomes [16,1,0,9,100].
+After sorting, it becomes [0,1,9,16,100].
+```
+
+Brute Force Approach: Time Complexity - O(n + nlogn) /  Space Complexity - O(n)
+
+Two Pointers Approach: Time Complexity - O(n) / Space Complexity - O(n)
+
+```python
+class Solution(object):
+    def sortedSquares(self, nums):
+        n=len(nums)
+        ans = [-1]*n
+        i,j,k = 0,n - 1,n - 1
+        #must include i==j, otherwise the last element in nums will not be stored
+        while i<=j: 							
+            lm = nums[i]**2
+            rm = nums[j]**2
+            if lm<rm:
+                ans[k]=rm
+                j-=1
+            else:
+                ans[k]=lm
+                i+=1
+            k-=1
+        return ans
+```
+
+Submission Proof
+
+<p align="center">
+    <img src="https://tva1.sinaimg.cn/large/008vxvgGgy1h88j107uddj31c00u0adf.jpg" width="70%" height="70%">
+</p>
+
+### 209. Minimum Size Subarray Sum
+
+Given an array of positive integers `nums` and a positive integer `target`, return *the **minimal length** of a* *subarray* *whose sum is greater than or equal to* `target`. If there is no such subarray, return `0` instead.
+
+Example:
+
+```
+Input: target = 7, nums = [2,3,1,2,4,3]
+Output: 2
+Explanation: The subarray [4,3] has the minimal length under the problem constraint.
+```
+
+Brute Force Approach:
+
+
+
+![长度最小的子数组](https://tva1.sinaimg.cn/large/008vxvgGgy1h88k4fpr1bg30fi0c0hdu.gif)
 
 
 
