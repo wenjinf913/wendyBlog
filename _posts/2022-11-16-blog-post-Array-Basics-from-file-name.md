@@ -54,8 +54,7 @@ class Solution(object):
 1. While (left **<** right) has to use **<**, since left == right is not legit in [left, right)
 2. if (nums[middle} > target) & if (nums[middle} < target) **right = middle+1** since nums[middle] is not the target & **left = middle** since nums[middle] will not be examined in the next interval 
 
-
-<img src="./post_img/binary-search_closed_interval-2.jpg" width="50%" height="50%">
+![./post_img/binary-search_closed_interval-2.jpg]
 
 
 ```python
