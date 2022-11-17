@@ -32,7 +32,7 @@ Explanation: 2 does not exist in nums so return -1
 2. if (nums[middle} > target) & if (nums[middle} < target)  **right = middle +1** & **left = middle -1**, since nums[middle] is not the target
 
 <p align="center">
-    <img src="../post_img/binary-search_closed_interval.jpg" width="50%" height="50%">
+    <img src="https://tva1.sinaimg.cn/large/008vxvgGgy1h87uy10z70j313g0qygnk.jpg" width="50%" height="50%">
 </p>
 
 
