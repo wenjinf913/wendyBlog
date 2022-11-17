@@ -1,3 +1,5 @@
+
+
 ## Binary Search Basics
 
 1. Binary search has to work on _**Ordered Array**_ and _**No Repeating Elements**_ in the array. 
@@ -32,10 +34,8 @@ Explanation: 2 does not exist in nums so return -1
 2. if (nums[middle} > target) & if (nums[middle} < target)  **right = middle +1** & **left = middle -1**, since nums[middle] is not the target
 
 <p align="center">
-    <img src="https://tva1.sinaimg.cn/large/008vxvgGgy1h87uy10z70j313g0qygnk.jpg" width="50%" height="50%">
+    <img src="https://tva1.sinaimg.cn/large/008vxvgGgy1h87v39kokbj312i0o2ta9.jpg" width="50%" height="50%">
 </p>
-
-
 
 
 
@@ -60,7 +60,7 @@ class Solution(object):
 2. if (nums[middle} > target) & if (nums[middle} < target) **right = middle+1** since nums[middle] is not the target & **left = middle** since nums[middle] will not be examined in the next interval 
 
 <p align="center">
-    <img src="../post_img/binary-search_closed_interval-2.jpg" width="50%" height="50%">
+    <img src="https://tva1.sinaimg.cn/large/008vxvgGgy1h87v4qi9m4j313g0qygnk.jpg" width="50%" height="50%">
 </p>
 
 
@@ -82,7 +82,7 @@ class Solution(object):
 Submission Proof
 
 <p align="center">
-    <img src="../post_img/submission-proof.jpg" width="70%" height="70%">
+    <img src="https://tva1.sinaimg.cn/large/008vxvgGgy1h87v5bc08hj31c00u00wc.jpg" width="70%" height="70%">
 </p>
 
 
